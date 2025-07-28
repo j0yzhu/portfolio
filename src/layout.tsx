@@ -9,16 +9,16 @@ function NavBar() {
                 <img className="w-20 m-2" src={pig} alt="Home"/>
             </Link>
             <Link to={"/about"}>
-                <span className="text-2xl font-semibold">About</span>
+                <span className="text-3xl font-semibold font-serif">About</span>
             </Link>
             <Link to={"/Projects"}>
-                <span className="text-2xl font-semibold">Projects</span>
+                <span className="text-3xl font-semibold font-serif">Projects</span>
             </Link>
             <Link to={"/Leadership"}>
-                <span className="text-2xl font-semibold">Leadership</span>
+                <span className="text-3xl font-semibold font-serif">Leadership</span>
             </Link>
             <Link to={"/Gallery"}>
-                <span className="text-2xl font-semibold">Gallery</span>
+                <span className="text-3xl font-semibold font-serif">Gallery</span>
             </Link>
             <ModeToggle/>
         </div>
