@@ -18,7 +18,7 @@ export default function IndexPage() {
                     <img className="absolute w-[15vw] bottom-[5vh] left-[8vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={nyota} alt="nyota"/>
                     <img className="absolute w-[10vw] top-[40vh] left-[20vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={bow} alt="bow"/>
                     <img className="absolute w-[8vw] bottom-[5vh] left-[40vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={ghibli} alt="ghibli"/>
-                    <img className="absolute w-[8vw] top-[40vh] right-[23vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={coke} alt="coke"/>\
+                    <img className="absolute w-[8vw] top-[40vh] right-[23vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={coke} alt="coke"/>
                     <img className="absolute w-[15vw] bottom-[5vh] right-[5vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={apple} alt="apple"/>
                 </div>
                 <div>

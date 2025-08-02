@@ -74,7 +74,7 @@
   --shadow-opacity: var(--shadow-opacity);
   --color-shadow-color: var(--shadow-color);
   --color-destructive-foreground: var(--destructive-foreground);
-  --animate-slide-right: slide-right 40s linear infinite;
+  --animate-slide-right: slide-right 15s linear infinite;
 
   @keyframes slide-right {
     0% {
