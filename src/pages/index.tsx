@@ -6,12 +6,8 @@ import coke from "@/assets/HomePageImages/coke.png";
 import ghibli from "@/assets/HomePageImages/ghibli.png";
 import nyota from "@/assets/HomePageImages/nyota.png";
 import stars from "@/assets/HomePageImages/stars.png";
-import {useState} from "react";
-
 
 export default function IndexPage() {
-    const [spin, setSpin] = useState(false);
-
     return (
         <>
             <div className="relative w-full h-screen">
