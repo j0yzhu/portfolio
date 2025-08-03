@@ -16,7 +16,6 @@ export default function AboutPage() {
         <>
             <div className="mt-10">
                 <h1 className="text-center text-[100px] font-cursive text-[#74A662]">Xiaomin Zhu (Joy)</h1>
-                <ImageCarousel/>
                 <Card className="max-w-5xl mx-auto mt-40">
                     <CardContent className="flex flex-row gap-4">
                         <div className="w-full">
@@ -45,44 +44,4 @@ export default function AboutPage() {
             </div>
         </>
     )
-}
-
-import cameraFrame from "@/assets/AboutPageImages/digi.png";
-import img1 from "@/assets/AboutPageImages/newimage.jpg";
-import InfiniteLooper from "@/components/ui/ImageCarousel.tsx";
-/*import img2 from "@/assets/AboutPageImages/image2.jpg";
-import img3 from "@/assets/AboutPageImages/image3.jpg";*/
-
-const images = [img1, img1, img1];
-
-function ImageCarousel() {
-    return (
-        <>
-            {/*Camera overlay frame*/}
-            <img
-                src={cameraFrame}
-                alt="Camera Frame"
-                className="absolute w-[60vw] max-w-[400px] z-10 right-[0vw] top-[30.6vh] transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            />
-            <div className="relative top-[5vh] w-full h-[15vh] overflow-hidden bg-accent">
-                {/* Scrolling carousel */}
-{/*                <div className="absolute w-[200%] h-full flex items-center animate-slide-right">
-                    {[...images, ...images, ...images, ...images, ...images].map((img, index) => (
-                        <img
-                            key={index}
-                            src={img}
-                            alt={`carousel-${index}`}
-                            className="h-[11vh] mx-2 object-cover rounded"
-                        />
-                    ))}
-                </div>*/}
-                <InfiniteLooper speed={4} direction="right">
-                    <div className="contentBlock contentBlock--one">
-                        Place the stuff you want to loop
-                    </div>
-                    <div className="contentBlock contentBlock--one">right here</div>
-                </InfiniteLooper>
-            </div>
-        </>
-    );
 }
