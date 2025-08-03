@@ -47,11 +47,11 @@ export default function AboutPage() {
     )
 }
 
-import cameraFrame from "@/assets/AboutPageImages/digi.png"; // replace with your actual path
+import cameraFrame from "@/assets/AboutPageImages/digi.png";
 import img1 from "@/assets/AboutPageImages/newimage.jpg";
+import InfiniteLooper from "@/components/ui/ImageCarousel.tsx";
 /*import img2 from "@/assets/AboutPageImages/image2.jpg";
 import img3 from "@/assets/AboutPageImages/image3.jpg";*/
-// Add more images as needed
 
 const images = [img1, img1, img1];
 
@@ -66,7 +66,7 @@ function ImageCarousel() {
             />
             <div className="relative top-[5vh] w-full h-[15vh] overflow-hidden bg-accent">
                 {/* Scrolling carousel */}
-                <div className="absolute w-[200%] h-full flex items-center animate-slide-right">
+{/*                <div className="absolute w-[200%] h-full flex items-center animate-slide-right">
                     {[...images, ...images, ...images, ...images, ...images].map((img, index) => (
                         <img
                             key={index}
@@ -75,7 +75,13 @@ function ImageCarousel() {
                             className="h-[11vh] mx-2 object-cover rounded"
                         />
                     ))}
-                </div>
+                </div>*/}
+                <InfiniteLooper speed={4} direction="right">
+                    <div className="contentBlock contentBlock--one">
+                        Place the stuff you want to loop
+                    </div>
+                    <div className="contentBlock contentBlock--one">right here</div>
+                </InfiniteLooper>
             </div>
         </>
     );
