@@ -3,7 +3,7 @@ export default function GalleryPage() {
         <>
             <div className="relative text-center mt-10">
                 <h1 className="flex justify-center text-[10vw] font-heading text-[#74A662]">Joy in Life</h1>
-                <p className="text-muted-foreground text-3xl font-serif">Lasting Moments, Beautifully Captured</p>
+                <p className="text-muted-foreground text-3xl font-serif">Cherished Memories {"<3"}</p>
                 <ImageCarousel/>
             </div>
         </>
@@ -47,4 +47,5 @@ function ImageCarousel() {
         </div>
     );
 }
+
 
