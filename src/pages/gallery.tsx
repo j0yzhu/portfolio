@@ -7,13 +7,17 @@ export default function GalleryPage() {
     )
 }
 
-import cameraFrame from "@/assets/AboutPageImages/digi.png";
-import img1 from "@/assets/AboutPageImages/img1.jpg";
+import cameraFrame from "@/assets/GalleryPageImages/digi.png";
+import img1 from "@/assets/GalleryPageImages/img1.jpg";
 import InfiniteLooper from "@/components/ui/ImageCarousel.tsx";
-import img2 from "@/assets/AboutPageImages/img2.jpg";
-/*import img3 from "@/assets/AboutPageImages/image3.jpg";*/
+import img2 from "@/assets/GalleryPageImages/img2.jpg";
+import img3 from "@/assets/GalleryPageImages/img3.jpg";
+import img4 from "@/assets/GalleryPageImages/img4.jpg";
+import img5 from "@/assets/GalleryPageImages/img5.jpg";
+import img6 from "@/assets/GalleryPageImages/img6.jpg";
+import img7 from "@/assets/GalleryPageImages/img7.jpg";
 
-const images = [img1, img2];
+const images = [img1, img2, img3, img4, img5, img6, img7];
 
 function ImageCarousel() {
     return (

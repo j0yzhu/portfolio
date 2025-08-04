@@ -1,10 +1,7 @@
 import {
     Card,
-    CardAction,
     CardContent,
     CardDescription,
-    CardFooter,
-    CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 import Joy from "@/assets/AboutPageImages/Me.jpg";
