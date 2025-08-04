@@ -22,7 +22,7 @@ export default function IndexPage() {
                     <img className="absolute w-[15vw] bottom-[5vh] right-[5vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={apple} alt="apple"/>
                 </div>
                 <div>
-                    <h1 className="absolute inset-0 flex items-center justify-center text-[15vw] font-cursive text-[#74A662]">Joy</h1>
+                    <h1 className="absolute inset-0 flex items-center justify-center text-[15vw] font-heading text-[#74A662]">Joy</h1>
                 </div>
             </div>
         </>

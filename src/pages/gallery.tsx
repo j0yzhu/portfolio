@@ -1,8 +1,12 @@
 export default function GalleryPage() {
     return (
-        <div className="mt-30">
-            <ImageCarousel/>
-        </div>
+        <>
+            <div className="relative text-center mt-10">
+                <h1 className="flex justify-center text-[10vw] font-heading text-[#74A662]">Joy in Life</h1>
+                <p className="text-muted-foreground text-3xl font-serif">Lasting Moments, Beautifully Captured</p>
+                <ImageCarousel/>
+            </div>
+        </>
 
     )
 }
@@ -21,7 +25,7 @@ const images = [img1, img2, img3, img4, img5, img6, img7];
 
 function ImageCarousel() {
     return (
-        <div className="relative">
+        <div className="relative top-30">
             {/*Camera overlay frame*/}
             <img
                 src={cameraFrame}
@@ -29,7 +33,7 @@ function ImageCarousel() {
                 className="absolute max-h-[800px] z-10 right-5 top-10 transform -translate-y-1/2 pointer-events-none"
             />
             <div className="w-full py-6 overflow-hidden bg-accent">
-                <InfiniteLooper speed={4} direction="right">
+                <InfiniteLooper speed={10} direction="right">
                     {images.map((img, index) => (
                         <img
                             key={index}
@@ -43,3 +47,4 @@ function ImageCarousel() {
         </div>
     );
 }
+

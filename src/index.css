@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -46,9 +49,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --font-sans: DM Sans, sans-serif;
   --font-mono: Menlo, monospace;
-  --font-serif: "Roboto Serif", serif;
+  --font-serif: Roboto Serif, serif;
   /*Custom fonts*/
   --font-cursive: Parisienne, serif;
+  --font-heading: Meow Script, serif;
   /*End Custom fonts*/
   --radius: 0.5rem;
   --tracking-tighter: calc(var(--tracking-normal) - 0.05em);

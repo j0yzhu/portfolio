@@ -12,7 +12,7 @@ export default function AboutPage() {
     return (
         <>
             <div className="mt-10">
-                <h1 className="text-center text-[100px] font-cursive text-[#74A662]">Xiaomin Zhu (Joy)</h1>
+                <h1 className="text-center text-[100px] font-heading text-[#74A662]">Xiaomin Zhu (Joy)</h1>
                 <Card className="max-w-5xl mx-auto mt-40">
                     <CardContent className="flex flex-row gap-4">
                         <div className="w-full">
