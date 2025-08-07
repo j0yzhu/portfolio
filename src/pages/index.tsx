@@ -12,7 +12,7 @@ export default function IndexPage() {
         <>
             <div className="relative w-full h-screen">
                 <div>
-                    <img className="absolute w-[15vw] top-[5vh] left-[5vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={cake} alt="cake"/>
+                    <img className="absolute w-[17vw]  top-[5vh] left-[5vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={cake} alt="cake"/>
                     <img className="absolute w-[17vw] top-[5vh] right-[5vw] object-contain animate-[bounce_4s_infinite_ease-in-out]"  src={camera} alt="camera"/>
                     <img className="absolute w-[17vw] top-[5vh] left-[40vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={stars} alt="stars"/>
                     <img className="absolute w-[15vw] bottom-[5vh] left-[8vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={nyota} alt="nyota"/>
@@ -22,7 +22,7 @@ export default function IndexPage() {
                     <img className="absolute w-[15vw] bottom-[5vh] right-[5vw] object-contain animate-[bounce_4s_infinite_ease-in-out]" src={apple} alt="apple"/>
                 </div>
                 <div>
-                    <h1 className="absolute inset-0 flex items-center justify-center text-[15vw] font-heading text-[#74A662]">Joy</h1>
+                    <h1 className="absolute inset-0 flex items-center justify-center text-[200px] sm:text-[400px] font-heading text-[#74A662]">Joy</h1>
                 </div>
             </div>
         </>

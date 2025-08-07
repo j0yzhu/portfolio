@@ -7,21 +7,25 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
-import scnz1 from "@/assets/GalleryPageImages/scnz1.jpeg";
-import scnz2 from "@/assets/GalleryPageImages/scnz2.jpeg";
-import scnz3 from "@/assets/GalleryPageImages/scnz3.jpeg";
+import scnz1 from "@/assets/LeadershipPageImages/scnz1.jpeg";
+import scnz2 from "@/assets/LeadershipPageImages/scnz2.jpeg";
+import scnz3 from "@/assets/LeadershipPageImages/scnz3.jpeg";
 
-import amun1 from "@/assets/GalleryPageImages/amun1.jpg";
-import amun2 from "@/assets/GalleryPageImages/amun2.jpg";
-import amun3 from "@/assets/GalleryPageImages/amun3.jpg";
-import amun4 from "@/assets/GalleryPageImages/amun4.jpg";
-import amun5 from "@/assets/GalleryPageImages/amun5.jpg";
+import amun1 from "@/assets/LeadershipPageImages/amun1.jpg";
+import amun2 from "@/assets/LeadershipPageImages/amun2.jpg";
+import amun3 from "@/assets/LeadershipPageImages/amun3.jpg";
+import amun4 from "@/assets/LeadershipPageImages/amun4.jpg";
+import amun5 from "@/assets/LeadershipPageImages/amun5.jpg";
 
-import ayd1 from "@/assets/GalleryPageImages/ayd1.jpg";
-import ayd2 from "@/assets/GalleryPageImages/ayd2.jpg";
-import ayd3 from "@/assets/GalleryPageImages/ayd3.jpg";
-import ayd4 from "@/assets/GalleryPageImages/ayd4.jpg";
-import ayd5 from "@/assets/GalleryPageImages/ayd5.jpg";
+import ayd1 from "@/assets/LeadershipPageImages/ayd1.jpg";
+import ayd2 from "@/assets/LeadershipPageImages/ayd2.jpg";
+import ayd3 from "@/assets/LeadershipPageImages/ayd3.jpg";
+import ayd4 from "@/assets/LeadershipPageImages/ayd4.jpg";
+import ayd5 from "@/assets/LeadershipPageImages/ayd5.jpg";
+
+import wtw1 from "@/assets/LeadershipPageImages/wtw1.jpg";
+import wtw2 from "@/assets/LeadershipPageImages/wtw2.jpg";
+import wtw3 from "@/assets/LeadershipPageImages/wtw3.jpg";
 
 
 export default function LeadershipPage() {
@@ -110,8 +114,27 @@ export default function LeadershipPage() {
                             diverse teams under time constraints.
                     `}
                 />
-            </div>
+                <LeadershipSection
+                    heading="We the Women Hackfest"
+                    images={[
+                        wtw1,
+                        wtw3,
+                        wtw2
 
+                    ]}
+                    title="We the Women Hackfest Scholarship:"
+                    dateRange="June 2024"
+                    description={`
+                    We the Women is a highly selective hackathon for women dedicated to using technology for social impact. 
+                    I received a full scholarship to participate, collaborating with mentors from PwC New Zealand, ANZ, and 
+                    Spark to address critical issues affecting women and girls today.
+                    I received high-level leadership training and transformative guidance from New Zealand technology leaders. 
+                    Collaborating with innovators from across the country, we focus on UN Global Goal #5 Gender Equality, 
+                    developing cutting-edge tech solutions to uplift women and communities.
+                    The life-changing experience has inspired me to continue to use technology as a tool to create meaningful change.
+                    `}
+                />
+            </div>
         </>
     )
 }
@@ -131,7 +154,7 @@ function LeadershipSection({heading, headingColour, subHeading, images, title, d
 
     return (
         <div className="flex flex-col gap-5">
-            <h1 className={`text-center font-heading text-[5vw] ${headingColourStyle}`}>{heading}</h1>
+            <h1 className={`text-center font-heading text-[50px] sm:text-[100px] ${headingColourStyle}`}>{heading}</h1>
             {subHeading && <h2 className="text-center font-serif text-xl dark:text-accent text-muted-foreground ">{subHeading}</h2>}
 
             <Separator/>
@@ -162,3 +185,5 @@ function LeadershipSection({heading, headingColour, subHeading, images, title, d
         </div>
     );
 }
+
+

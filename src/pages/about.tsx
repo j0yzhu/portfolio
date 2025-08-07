@@ -1,7 +1,6 @@
 import {
     Card,
     CardContent,
-    CardDescription, CardFooter, CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 import Joy from "@/assets/AboutPageImages/Me.jpg";
@@ -14,7 +13,7 @@ export default function AboutPage() {
         <>
             <div className="flex flex-col w-full max-w-7xl justify-center mx-auto gap-5 mt-5">
                 <AboutSection
-                    heading="Xiaomin (Joy) Zhu"
+                    heading="Joy Zhu"
                     title="About Me:"
                     image={
                         Joy
@@ -24,9 +23,6 @@ export default function AboutPage() {
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                             proident , sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident , sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                             proident , sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -111,3 +107,6 @@ function AboutSection({heading, headingColour, title, image, description, links}
 
     )
 }
+
+// My interests
+// Whats in my bag?
