@@ -19,20 +19,24 @@ export default function AboutPage() {
                         Joy
                     }
                     description={`
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident , sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident , sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident , sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident , sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    
+                    I’m a recent Computer Science graduate from the University of Auckland with a strong passion for technology. 
+                    I'm currently building my portfolio through mobile and web development projects, with a focus on creating 
+                    user-friendly, accessible, and inclusive software. I have a keen eye for aesthetics and enjoy crafting 
+                    intuitive designs that enhance the user experience. Eager to keep learning, I’m continuously developing my 
+                    skills through personal projects.
+
+                    I work across the full stack, primarily using Python and TypeScript to build robust applications. On the 
+                    backend, I develop RESTful APIs with Flask and manage PostgreSQL databases through Python ORMs like Peewee.  
+                    On the frontend, I create mobile-first apps and websites with React and React Native, always prioritizing 
+                    user experience and accessibility. My deployment experience includes working with Docker containers and 
+                    leveraging AWS services such as S3 and ECS to ensure scalable and reliable application hosting.
+
+                    Currently, I’m deepening my skills in crafting polished mobile and web user interfaces, while also exploring 
+                    cloud deployment and DevOps fundamentals to streamline application delivery. I’m interested in enhancing API 
+                    design and backend performance to build efficient, impactful products that truly serve users’ needs.
+
+                    When I’m not coding, I’m into DIY crafts, drawing, and photography - capturing food, scenery, and people. I 
+                    also love animation and movies; I recently watched Shutter Island.
                     `}
                     links={[
                         {
@@ -98,15 +102,17 @@ function AboutSection({heading, headingColour, title, image, description, links}
                         </div>
                     </div>
                     <div>
-                        <CardTitle>{title}</CardTitle>
-                        <p>{description}</p>
+                        <CardTitle className="mb-1">{title}</CardTitle>
+                        {description.split('\n\n').map((para, idx) => (
+                            <p key={idx} className="mb-4">
+                                {para.trim()}
+                            </p>
+                        ))}
                     </div>
                 </CardContent>
             </Card>
         </div>
-
     )
 }
 
-// My interests
 // Whats in my bag?

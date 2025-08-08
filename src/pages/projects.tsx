@@ -16,6 +16,13 @@ import eggTimer from "@/assets/ProjectPageImages/eggTimer.png";
 
 import gpt1 from "@/assets/ProjectPageImages/gpt1.png";
 
+import techStack1 from "@/assets/ProjectPageImages/loopTechStack.png";
+import techStack2 from "@/assets/ProjectPageImages/eggTimerTechStack.png";
+import techStack3 from "@/assets/ProjectPageImages/gptTechStack.png";
+import {Button} from "@/components/ui/button.tsx";
+import {ExternalLinkIcon} from "lucide-react";
+
+
 export default function LeadershipPage() {
     return (
         <>
@@ -31,7 +38,11 @@ export default function LeadershipPage() {
                         LoopPoster
                     ]}
                     title="COMPSCI 399- Capstone Project:"
-                    dateRange="MARCH 2025 - JULY 2025"
+                    links={{
+                        link:"https://github.com/j0yzhu/Loop"
+
+                    }}
+                    dateRange="March 2025 - July 2025"
                     description={`
                     Loop is a mobile social platform designed to support neurodivergent students at the University of Auckland by creating a space that’s inclusive, 
                     easy to use, and low-pressure for connecting with others. We started this project because the mainstream social platforms can be overwhelming-too 
@@ -52,6 +63,11 @@ export default function LeadershipPage() {
                     other universities across New Zealand. Loop is a solid first step towards building a more inclusive digital space where neurodivergent students can 
                     feel safe, heard, and connected. 
                     `}
+                    image={
+                        techStack1
+                    }
+
+
                 />
                 <ProjectSection
                     heading="Egg Timer"
@@ -60,7 +76,11 @@ export default function LeadershipPage() {
                         eggTimer
                     ]}
                     title="🥚 Egg Timer:"
-                    dateRange="🐔 FEBRUARY 2025"
+                    links={{
+                        link:"https://github.com/j0yzhu/egg-timer"
+
+                    }}
+                    dateRange="🐔 February 2025"
                     description={`
                     This was a small fun project I made while trying out React, TypeScript, and Vite for the first time. I built it because I could never get my
                     boiled eggs just right. Too runny, too firm, too chaotic!.
@@ -70,6 +90,9 @@ export default function LeadershipPage() {
 
                      Just a cute, aesthetic one-pager to make boiling eggs a bit more entertaining.
                     `}
+                    image={
+                        techStack2
+                    }
                 />
                 <ProjectSection
                     heading="GPTiculate"
@@ -78,12 +101,19 @@ export default function LeadershipPage() {
                         gpt1
                     ]}
                     title="GPTiculate"
-                    dateRange="JUNE 2025"
+                    links={{
+                        link:"https://github.com/j0yzhu/gpticulate"
+
+                    }}
+                    dateRange="June 2025"
                     description={`
                     Gpticulate is an AI-powered twist on the classic “Articulate!” game where players input custom topics and age ranges, and ChatGPT dynamically generates unique, 
                     age-appropriate prompts to keep gameplay fresh and engaging. Built with React for a smooth, interactive front-end and powered by a fast API backend that handles 
                     requests and communicates with ChatGPT, the app keeps track of time and points throughout the game so you don't have to!
                     `}
+                    image={
+                        techStack3
+                    }
                 />
             </div>
 
@@ -91,14 +121,20 @@ export default function LeadershipPage() {
     )
 }
 
+interface ProjectPageLink {
+    link: string;
+}
+
 interface ProjectSectionProps {
     heading: string;
     headingColour?: string;
     subHeading?: string;
     images: string[];
+    image: string;
     title: string;
     dateRange: string;
     description: string;
+    links: ProjectPageLink
 }
 
 function ProjectSection({
@@ -106,18 +142,19 @@ function ProjectSection({
                             headingColour,
                             subHeading,
                             images,
+                            image,
                             title,
                             dateRange,
-                            description
+                            description,
+                            links,
                         }: ProjectSectionProps) {
     const headingColourStyle = headingColour ? `text-[${headingColour}]` : "text-[#74A662]";
 
     return (
         <div className="flex flex-col gap-5">
             <h1 className={`text-center font-heading text-[50px] sm:text-[100px] ${headingColourStyle}`}>{heading}</h1>
-            {subHeading &&
-                <h2 className="text-center font-serif text-xl dark:text-accent text-muted-foreground ">{subHeading}</h2>}
 
+            {subHeading && <h2 className="text-center font-serif text-xl dark:text-accent text-muted-foreground ">{subHeading}</h2>}
             <Separator/>
             <div className="flex flex-wrap gap-3 justify-center">
                 {
@@ -134,7 +171,16 @@ function ProjectSection({
             <Card>
                 <div className="text-center">
                     <CardHeader>
-                        <CardTitle>{title}</CardTitle>
+                        <CardTitle>
+                            <a
+                                href={links.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                <Button variant="link" className="hover:cursor-pointer text-[#74A662] text-xl">{title}<ExternalLinkIcon/></Button>
+                            </a>
+                        </CardTitle>
                         <CardDescription>{dateRange}</CardDescription>
                     </CardHeader>
 
@@ -145,6 +191,10 @@ function ProjectSection({
                             {para.trim()}
                         </p>
                     ))}
+                    <img
+                        src={image}
+                        className="mx-auto object-cover sm:min-w-sm sm:max-h-20 rounded aspect-auto"
+                    />
                 </CardContent>
             </Card>
         </div>

@@ -41,7 +41,7 @@ export default function LeadershipPage() {
                         scnz3
                     ]}
                     title="Startup Club NZ - Marketing Executive:"
-                    dateRange="FEBRUARY 2024 - NOVEMBER 2024"
+                    dateRange="February 2024 - November 2024"
                     description={`
                     As a Marketing Executive for Startup Club NZ, I demonstrated leadership by taking initiative,
                         encouraging collaboration, and leading marketing efforts to grow the club’s presence and student
@@ -74,7 +74,7 @@ export default function LeadershipPage() {
                         amun5
                     ]}
                     title="UN Youth NZ - Media Officer:"
-                    dateRange="MARCH 2025"
+                    dateRange="March 2025"
                     description={`
                     As the Media Officer for AMUN, my role involved capturing the spirit and energy of the event
                             primarily through photography.
@@ -100,7 +100,7 @@ export default function LeadershipPage() {
                         ayd5
                     ]}
                     title="UN Youth NZ - Logistics Officer:"
-                    dateRange="APRIL 2025"
+                    dateRange="April 2025"
                     description={`
                     At AYD, I served as a Logistics Officer, where I supported the behind-the-scenes operations
                             that made the event run smoothly.
