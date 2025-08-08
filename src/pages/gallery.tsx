@@ -1,16 +1,3 @@
-export default function GalleryPage() {
-    return (
-        <>
-            <div className="relative text-center mt-10">
-                <h1 className="flex justify-center text-[10vw] font-heading text-[#74A662]">Joy in Life</h1>
-                <p className="text-muted-foreground text-3xl font-serif">Cherished Memories {"<3"}</p>
-                <ImageCarousel/>
-            </div>
-        </>
-
-    )
-}
-
 import cameraFrame from "@/assets/GalleryPageImages/digi.png";
 import img1 from "@/assets/GalleryPageImages/img1.jpg";
 import InfiniteLooper from "@/components/ui/ImageCarousel.tsx";
@@ -20,8 +7,24 @@ import img4 from "@/assets/GalleryPageImages/img4.jpg";
 import img5 from "@/assets/GalleryPageImages/img5.jpg";
 import img6 from "@/assets/GalleryPageImages/img6.jpg";
 import img7 from "@/assets/GalleryPageImages/img7.jpg";
+import bow from "@/assets/HomePageImages/bow.png";
 
 const images = [img1, img2, img3, img4, img5, img6, img7];
+
+export default function GalleryPage() {
+    return (
+        <>
+            <div className="relative text-center mt-10">
+                <img className="absolute w-[9vw] top-[8vh] left-[15vw] object-contain" src={bow} alt="bow"/>
+                <img className="absolute w-[9vw] top-[8vh] right-[15vw] object-contain" src={bow} alt="bow"/>
+                <h1 className="flex justify-center text-[10vw] font-heading text-[#74A662]">Joy in Life</h1>
+                <p className="text-muted-foreground text-3xl font-serif">Cherished Memories {"<3"}</p>
+                <ImageCarousel/>
+            </div>
+        </>
+
+    )
+}
 
 function ImageCarousel() {
     return (
