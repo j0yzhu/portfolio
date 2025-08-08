@@ -80,7 +80,7 @@ export default function LeadershipPage() {
                         link:"https://github.com/j0yzhu/egg-timer"
 
                     }}
-                    dateRange="🐔 February 2025"
+                    dateRange="February 2025"
                     description={`
                     This was a small fun project I made while trying out React, TypeScript, and Vite for the first time. I built it because I could never get my
                     boiled eggs just right. Too runny, too firm, too chaotic!.
