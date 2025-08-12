@@ -7,9 +7,21 @@ import img4 from "@/assets/GalleryPageImages/img4.jpg";
 import img5 from "@/assets/GalleryPageImages/img5.jpg";
 import img6 from "@/assets/GalleryPageImages/img6.jpg";
 import img7 from "@/assets/GalleryPageImages/img7.jpg";
+import img8 from "@/assets/GalleryPageImages/img8.jpg";
+import img9 from "@/assets/GalleryPageImages/img9.jpg";
+import img10 from "@/assets/GalleryPageImages/img10.jpg";
+import img11 from "@/assets/GalleryPageImages/img11.jpg";
+import img12 from "@/assets/GalleryPageImages/img12.jpg";
+import img13 from "@/assets/GalleryPageImages/img13.jpg";
+import img14 from "@/assets/GalleryPageImages/img14.jpg";
+import img15 from "@/assets/GalleryPageImages/img15.jpg";
+import img16 from "@/assets/GalleryPageImages/img16.jpg";
+import img17 from "@/assets/GalleryPageImages/img17.jpg";
+
 import bow from "@/assets/HomePageImages/bow.png";
 
-const images = [img1, img2, img3, img4, img5, img6, img7];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
+    img11, img12, img13, img14, img15, img16, img17];
 
 export default function GalleryPage() {
     return (
@@ -40,7 +52,7 @@ function ImageCarousel() {
                 className="absolute max-h-[800px] z-10 right-[50%] sm:right-5 top-11 transform translate-x-1/2 sm:translate-x-0 -translate-y-1/2 pointer-events-none"
             />
             <div className="w-full py-6 overflow-hidden bg-accent">
-                <InfiniteLooper speed={10} direction="right">
+                <InfiniteLooper speed={20} direction="right">
                     {images.map((img, index) => (
                         <img
                             key={index}

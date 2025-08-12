@@ -11,7 +11,7 @@ import type {ComponentType} from "react";
 export default function AboutPage() {
     return (
         <>
-            <div className="flex flex-col w-full max-w-7xl justify-center mx-auto gap-5 mt-5">
+            <div className="flex flex-col w-full max-w-7xl justify-center mx-auto gap-5 mt-10">
                 <AboutSection
                     heading="Joy Zhu"
                     title="About Me:"
@@ -114,5 +114,3 @@ function AboutSection({heading, headingColour, title, image, description, links}
         </div>
     )
 }
-
-// Whats in my bag?
