@@ -151,10 +151,10 @@ function ProjectSection({
     const headingColourStyle = headingColour ? `text-[${headingColour}]` : "text-[#74A662]";
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-full px-5">
             <h1 className={`text-center font-heading text-[50px] sm:text-[100px] ${headingColourStyle}`}>{heading}</h1>
 
-            {subHeading && <h2 className="text-center font-serif text-xl dark:text-accent text-muted-foreground ">{subHeading}</h2>}
+            {subHeading && <h2 className="text-center font-serif text-[15px] sm:text-[20px] text-xl dark:text-accent text-muted-foreground ">{subHeading}</h2>}
             <Separator/>
             <div className="flex flex-wrap gap-3 justify-center">
                 {
@@ -162,7 +162,7 @@ function ProjectSection({
                         return (
                             <img
                                 src={image}
-                                className="flex-1 object-contain rounded min-w-sm sm:min-w-md aspect-auto"
+                                className="flex-1 object-contain rounded sm:min-w-md aspect-auto"
                             />
                         )
                     })
@@ -171,14 +171,14 @@ function ProjectSection({
             <Card>
                 <div className="text-center">
                     <CardHeader>
-                        <CardTitle>
+                        <CardTitle className="flex justify-center">
                             <a
                                 href={links.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="hover:underline"
                             >
-                                <Button variant="link" className="hover:cursor-pointer text-[#74A662] text-xl">{title}<ExternalLinkIcon/></Button>
+                                <Button variant="link" className="hover:cursor-pointer text-[#74A662] text-lg sm:text-2xl inline-flex items-center gap-1">{title}<ExternalLinkIcon/></Button>
                             </a>
                         </CardTitle>
                         <CardDescription>{dateRange}</CardDescription>

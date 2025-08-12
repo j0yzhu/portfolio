@@ -14,11 +14,15 @@ const images = [img1, img2, img3, img4, img5, img6, img7];
 export default function GalleryPage() {
     return (
         <>
-            <div className="relative text-center mt-10">
-                <img className="absolute w-[9vw] top-[8vh] left-[15vw] object-contain" src={bow} alt="bow"/>
-                <img className="absolute w-[9vw] top-[8vh] right-[15vw] object-contain" src={bow} alt="bow"/>
-                <h1 className="flex justify-center text-[10vw] font-heading text-[#74A662]">Joy in Life</h1>
-                <p className="text-muted-foreground text-3xl font-serif">Cherished Memories {"<3"}</p>
+            <div className="text-center justify-center mt-20 w-full">
+                <div className="flex gap-5 sm:gap-20 mx-4 justify-center items-center">
+                    <img className="w-[17vw] md:w-[8vw] object-contain" src={bow} alt="bow"/>
+                    <h1 className="flex justify-center text-[80px] sm:text-9xl font-heading text-[#74A662]">Joy in Life</h1>
+                    <img className="w-[17vw] md:w-[8vw] object-contain" src={bow} alt="bow"/>
+                </div>
+
+                <p className="text-muted-foreground mt-5 text-[20px] sm:text-3xl font-serif">Cherished Memories {"<3"}</p>
+
                 <ImageCarousel/>
             </div>
         </>
@@ -33,7 +37,7 @@ function ImageCarousel() {
             <img
                 src={cameraFrame}
                 alt="Camera Frame"
-                className="absolute max-h-[800px] z-10 right-5 top-10 transform -translate-y-1/2 pointer-events-none"
+                className="absolute max-h-[800px] z-10 right-[50%] sm:right-5 top-11 transform translate-x-1/2 sm:translate-x-0 -translate-y-1/2 pointer-events-none"
             />
             <div className="w-full py-6 overflow-hidden bg-accent">
                 <InfiniteLooper speed={10} direction="right">

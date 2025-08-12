@@ -78,7 +78,7 @@ function AboutSection({heading, headingColour, title, image, description, links}
     return (
         <div className="flex flex-col gap-5 items-center mx-2">
             <h1 className={`text-center font-heading text-8xl ${headingColourStyle}`}>{heading}</h1>
-            <Card className="w-full max-w-5xl ml-10">
+            <Card className="w-full max-w-5xl mx-10">
                 <CardContent className="flex flex-col sm:flex-row gap-4">
                     <div>
                         {

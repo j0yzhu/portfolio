@@ -11,11 +11,9 @@ function NavBar() {
         <>
             <div
                 className="w-full bg-background/80 backdrop-blur px-4 py-2 flex items-center justify-between border-b relative">
-                {/* Logo */}
-                <Link to={"/"}>
-                    <img className="w-16" src={pig} alt="Home"/>
-                </Link>
-
+                    <Link to={"/"}>
+                        <img className="w-16" src={pig} alt="Home"/>
+                    </Link>
                 {/* Desktop links */}
                 <div className="hidden md:flex gap-6 items-center flex-1 justify-around ">
                     <Link to={"/about"} className="text-3xl font-semibold font-serif">
@@ -44,16 +42,18 @@ function NavBar() {
             </div>
             {/* Right-side popout menu */}
             <div
-                className={`fixed bg-secondary top-0 right-0 h-full w-64 border-l shadow-lg transform transition-transform duration-300 ease-in-out ${
+                className={`fixed bg-accent top-0 right-0 h-full w-64 z-50 border transform transition-transform duration-300 ease-in-out ${
                     isOpen ? "translate-x-0" : "translate-x-full"
                 }`}
             >
                 {/* Mobile hamburger */}
-                <div className="md:hidden">
-                    <Hamburger toggled={isOpen} toggle={setOpen}/>
+                <div className="flex items-center justify-between pr-3">
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
+                    <ModeToggle />
                 </div>
 
-                <div className="p-6 flex flex-col gap-6 text-lg font-serif">
+
+                <div className="p-6 flex flex-col gap-6 text-lg font-serif font-bold text-muted-foreground">
                     <Link to={"/about"} onClick={() => setOpen(false)}>
                         About
                     </Link>
@@ -66,7 +66,6 @@ function NavBar() {
                     <Link to={"/Gallery"} onClick={() => setOpen(false)}>
                         Gallery
                     </Link>
-                    <ModeToggle/>
                 </div>
             </div>
         </>

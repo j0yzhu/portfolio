@@ -36,9 +36,9 @@ export default function LeadershipPage() {
                     heading="Startup Club NZ"
 
                     images={[
-                        scnz1,
+                        scnz3,
                         scnz2,
-                        scnz3
+                        scnz1
                     ]}
                     title="Startup Club NZ - Marketing Executive:"
                     dateRange="February 2024 - November 2024"
@@ -46,11 +46,13 @@ export default function LeadershipPage() {
                     As a Marketing Executive for Startup Club NZ, I demonstrated leadership by taking initiative,
                         encouraging collaboration, and leading marketing efforts to grow the club’s presence and student
                         engagement.
+
                         I was responsible for managing all marketing tasks for events I was assigned to, making sure our
                         campaigns supported the club’s goal of increasing involvement and awareness.
                         One of the main ways I showed leadership was by taking full ownership of event promotion. I
                         attended planning meetings and led discussions on how we could market events in a way that would
                         appeal to students.
+
                         I suggested ideas that matched our target audience and created engaging content for our social
                         media. I used tools like Canva to design graphics and CapCut to create short videos.
                         These were then shared on platforms like Instagram, Facebook, and LinkedIn. I also made sure
@@ -58,6 +60,7 @@ export default function LeadershipPage() {
                         These efforts are what drove our marketing campaigns to be successful in getting students
                         involved. We had over 300 new member sign-ups in just five weeks, and our events regularly met
                         or even exceeded our attendance goals.
+
                         The way we presented the club made a strong first impression, and it helped encourage more
                         students to join and stay involved. We even met our goal to reach over 1000 followers on
                         instagram before the year ended.
@@ -153,7 +156,7 @@ function LeadershipSection({heading, headingColour, subHeading, images, title, d
     const headingColourStyle = headingColour ? `text-[${headingColour}]` : "text-[#74A662]";
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 px-5">
             <h1 className={`text-center font-heading text-[50px] sm:text-[100px] ${headingColourStyle}`}>{heading}</h1>
             {subHeading && <h2 className="text-center font-serif text-xl dark:text-accent text-muted-foreground ">{subHeading}</h2>}
 
@@ -164,7 +167,7 @@ function LeadershipSection({heading, headingColour, subHeading, images, title, d
                         return (
                             <img
                                 src={image}
-                                className="flex-1 object-cover rounded min-w-sm aspect-auto"
+                                className="flex-1 object-cover rounded sm:min-w-md aspect-auto"
                             />
                         )
                     })
@@ -173,13 +176,17 @@ function LeadershipSection({heading, headingColour, subHeading, images, title, d
             <Card>
                 <div className="text-center">
                     <CardHeader>
-                        <CardTitle>{title}</CardTitle>
+                        <CardTitle className="text-lg sm:text-2xl text-[#74A662]">{title}</CardTitle>
                         <CardDescription>{dateRange}</CardDescription>
                     </CardHeader>
 
                 </div>
                 <CardContent>
-                    <p>{description}</p>
+                    {description.split('\n\n').map((para, idx) => (
+                        <p key={idx} className="mb-4">
+                            {para.trim()}
+                        </p>
+                    ))}
                 </CardContent>
             </Card>
         </div>

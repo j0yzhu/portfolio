@@ -69,7 +69,7 @@ export default function IndexPage() {
                 </div>
             </div>
             <div>
-                <h1 className="absolute inset-0 flex items-center justify-center text-[200px] sm:text-[400px] font-heading text-[#74A662]">Joy</h1>
+                <h1 className="absolute inset-0 flex items-center justify-center text-[200px] sm:text-[400px] font-heading text-[#74A662] pointer-events-none">Joy</h1>
             </div>
         </>
     )
