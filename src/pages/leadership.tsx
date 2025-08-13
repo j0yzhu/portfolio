@@ -43,27 +43,17 @@ export default function LeadershipPage() {
                     title="Startup Club NZ - Marketing Executive:"
                     dateRange="February 2024 - November 2024"
                     description={`
-                    As a Marketing Executive for Startup Club NZ, I demonstrated leadership by taking initiative,
-                        encouraging collaboration, and leading marketing efforts to grow the club’s presence and student
-                        engagement.
+                        As a Marketing Executive at Startup Club NZ at the University of Auckland, I led marketing initiatives to grow the club’s presence 
+                        and drive student engagement. I took ownership of event promotion by attending planning meetings, 
+                        contributing creative ideas, and developing campaigns tailored to our target audience.
 
-                        I was responsible for managing all marketing tasks for events I was assigned to, making sure our
-                        campaigns supported the club’s goal of increasing involvement and awareness.
-                        One of the main ways I showed leadership was by taking full ownership of event promotion. I
-                        attended planning meetings and led discussions on how we could market events in a way that would
-                        appeal to students.
+                        I created engaging content using tools like Canva and CapCut, and shared it across Instagram, Facebook, and LinkedIn, 
+                        ensuring a consistent visual style that strengthened our brand identity. These efforts contributed to over 300 new 
+                        member sign-ups in just five weeks, with events regularly meeting or exceeding attendance goals.
 
-                        I suggested ideas that matched our target audience and created engaging content for our social
-                        media. I used tools like Canva to design graphics and CapCut to create short videos.
-                        These were then shared on platforms like Instagram, Facebook, and LinkedIn. I also made sure
-                        everything followed a consistent visual style to keep our brand strong and recognisable.
-                        These efforts are what drove our marketing campaigns to be successful in getting students
-                        involved. We had over 300 new member sign-ups in just five weeks, and our events regularly met
-                        or even exceeded our attendance goals.
-
-                        The way we presented the club made a strong first impression, and it helped encourage more
-                        students to join and stay involved. We even met our goal to reach over 1000 followers on
-                        instagram before the year ended.
+                        By presenting the club in a way that made a strong first impression, we also achieved our goal 
+                        of reaching 1k+ Instagram followers by year-end, helping more students discover and engage 
+                        with Startup Club NZ.
                     `}
                 />
                 <LeadershipSection
@@ -79,17 +69,11 @@ export default function LeadershipPage() {
                     title="UN Youth NZ - Media Officer:"
                     dateRange="March 2025"
                     description={`
-                    As the Media Officer for AMUN, my role involved capturing the spirit and energy of the event
-                            primarily through photography.
-                            I documented key moments of delegates' speeches, collaboration, and committee debates to
-                            highlight the significance of
-                            youth voices in global discussions. This experience deepened my appreciation for how photos
-                            can shape engagement and memory.
-                            I learned how important it is to capture not just people, but purpose, ensuring the
-                            delegates felt seen and celebrated for
-                            their efforts. The role also strengthened my attention to detail and my ability to work
-                            efficiently under a structured hourly
-                            schedule.
+                        As Media Officer for AMUN, I captured the energy and impact of the event through photography, documenting key moments of 
+                        delegates’ speeches, collaboration, and committee debates. This role taught me the power of visuals in shaping engagement 
+                        and preserving memories, highlighting the significance of youth voices in global discussions. I focused on capturing not 
+                        just people, but purpose - ensuring delegates felt seen and celebrated for their contributions. The experience also 
+                        strengthened my attention to detail and my ability to work efficiently within a structured schedule.
                     `}
                 />
                 <LeadershipSection
@@ -105,16 +89,11 @@ export default function LeadershipPage() {
                     title="UN Youth NZ - Logistics Officer:"
                     dateRange="April 2025"
                     description={`
-                    At AYD, I served as a Logistics Officer, where I supported the behind-the-scenes operations
-                            that made the event run smoothly.
-                            From setting up tables and packing it down to managing catering and picking up food orders,
-                            I learned the importance of
-                            planning, teamwork, and communication. This role pushed me to be proactive and adaptable.
-                            When unexpected issues arose, I
-                            quickly problem-solved with my team to ensure the environment remained presentable and
-                            efficient for participants. I
-                            developed strong organisational skills and became more confident in coordinating with
-                            diverse teams under time constraints.
+                        As a Logistics Officer at AYD, I supported the behind-the-scenes operations that ensured the event ran smoothly. From 
+                        setting up and packing down to managing catering and coordinating food orders, I honed skills in planning, teamwork, and 
+                        communication. This role required me to be proactive and adaptable, quickly problem-solving with my team when unexpected 
+                        issues arose to maintain an efficient and presentable environment for participants. Through this experience, I 
+                        strengthened my organizational skills and gained confidence in coordinating with diverse teams under time-sensitive conditions.
                     `}
                 />
                 <LeadershipSection

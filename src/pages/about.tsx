@@ -35,8 +35,7 @@ export default function AboutPage() {
                     cloud deployment and DevOps fundamentals to streamline application delivery. I’m interested in enhancing API 
                     design and backend performance to build efficient, impactful products that truly serve users’ needs.
 
-                    When I’m not coding, I’m into DIY crafts, drawing, and photography - capturing food, scenery, and people. I 
-                    also love animation and movies; I recently watched Shutter Island.
+                    Outside of coding, I enjoy exploring new cafes, going for walks, films, and photography!
                     `}
                     links={[
                         {
@@ -102,7 +101,7 @@ function AboutSection({heading, headingColour, title, image, description, links}
                         </div>
                     </div>
                     <div>
-                        <CardTitle className="mb-1">{title}</CardTitle>
+                        <CardTitle className="mb-2 font-serif font-bold">{title}</CardTitle>
                         {description.split('\n\n').map((para, idx) => (
                             <p key={idx} className="mb-4">
                                 {para.trim()}

@@ -44,7 +44,7 @@ export default function LeadershipPage() {
                     }}
                     dateRange="March 2025 - July 2025"
                     description={`
-                    Loop is a mobile social platform designed to support neurodivergent students at the University of Auckland by creating a space that’s inclusive, 
+                    Loop is a cross-platform mobile app designed to support neurodivergent students at the University of Auckland by creating a space that’s inclusive, 
                     easy to use, and low-pressure for connecting with others. We started this project because the mainstream social platforms can be overwhelming-too 
                     cluttered, not designed with neurodiverse needs in mind, and lacking the kind of community support that students actually need. With Loop, we 
                     aimed to change that. 
@@ -54,14 +54,13 @@ export default function LeadershipPage() {
                     announcements, so they can connect with students. On top of that, we included accessibility options such as dark/light mode, readable font sizes, 
                     and a built-in session timer to support students with different sensory needs. 
 
-                    The app was built using React Native to work on both iOS and Android, with Flask and PostgreSQL powering the backend. The infrastructure is hosted 
-                    on AWS and services used include ECS, ECR, ELB, S3, and RDS. Our team worked in Agile development, testing and refining features week by week based 
-                    on feedback. The app is a functional and meaningful platform that not only helps students connect with each other but also supports the work that 
-                    Inclusive Learning staff do. 
+                    My contributions spanned full-stack development and cloud deployment - building RESTful APIs in Flask with PostgreSQL, developing reusable UI 
+                    components in React Native, and deploying on AWS (ECS, ECR, ELB, S3, RDS). As tech lead, I coordinated the team, guided consistent design and code 
+                    quality, and solved technical challenges. This project strengthened my skills in API design, UI development, and Agile teamwork, while deepening my 
+                    understanding of designing for accessibility and inclusivity.
 
-                    Looking ahead, we can make improvements by adding features like notifications, image/video sharing via messaging, and eventually roll the app out to 
-                    other universities across New Zealand. Loop is a solid first step towards building a more inclusive digital space where neurodivergent students can 
-                    feel safe, heard, and connected. 
+                    Looking ahead, improvements include notifications, multimedia sharing in messages, and scaling to other universities across New Zealand. 
+                    Loop marks a strong first step toward creating a safe, inclusive digital space where neurodivergent students can feel heard, supported, and connected.
                     `}
                     image={
                         techStack1
