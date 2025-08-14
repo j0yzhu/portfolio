@@ -53,7 +53,7 @@ function NavBar() {
                 </div>
 
 
-                <div className="p-6 flex flex-col gap-6 text-lg font-serif font-bold text-muted-foreground">
+                <div className="p-6 flex flex-col gap-6 text-lg font-serif font-bold text-foreground">
                     <Link to={"/about"} onClick={() => setOpen(false)}>
                         About
                     </Link>

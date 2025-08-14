@@ -37,7 +37,7 @@ export default function LeadershipPage() {
                         loop2,
                         LoopPoster
                     ]}
-                    title="COMPSCI 399- Capstone Project:"
+                    title="Capstone Project:"
                     links={{
                         link:"https://github.com/j0yzhu/Loop"
 
