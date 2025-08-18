@@ -52,7 +52,7 @@ function ImageCarousel() {
                 className="absolute max-h-[800px] z-10 right-[50%] sm:right-5 top-11 transform translate-x-1/2 sm:translate-x-0 -translate-y-1/2 pointer-events-none"
             />
             <div className="w-full py-6 overflow-hidden bg-accent">
-                <InfiniteLooper speed={20} direction="right">
+                <InfiniteLooper speed={40} direction="right">
                     {images.map((img, index) => (
                         <img
                             key={index}
