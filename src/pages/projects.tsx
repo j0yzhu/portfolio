@@ -59,6 +59,9 @@ export default function LeadershipPage() {
                     Looking ahead, improvements include notifications, multimedia sharing in messages, and scaling to other universities across New Zealand. 
                     Loop marks a strong first step toward creating a safe, inclusive digital space where neurodivergent students can feel heard, supported, and connected.
                     `}
+                    demoLink={{
+                        link:"https://www.youtube.com/watch?v=dBi7D7Ndiqs"
+                    }}
                     image={
                         techStack1
                     }
@@ -120,6 +123,9 @@ export default function LeadershipPage() {
 interface ProjectPageLink {
     link: string;
 }
+interface DemoPageLink {
+    link: string;
+}
 
 interface ProjectSectionProps {
     heading: string;
@@ -131,6 +137,7 @@ interface ProjectSectionProps {
     dateRange: string;
     description: string;
     links: ProjectPageLink
+    demoLink?: DemoPageLink
 }
 
 function ProjectSection({
@@ -143,6 +150,7 @@ function ProjectSection({
                             dateRange,
                             description,
                             links,
+                            demoLink,
                         }: ProjectSectionProps) {
     const headingColourStyle = headingColour ? `text-[${headingColour}]` : "text-[#74A662]";
 
@@ -167,7 +175,7 @@ function ProjectSection({
             <Card>
                 <div className="text-center">
                     <CardHeader>
-                        <CardTitle className="flex justify-center">
+                        <CardTitle className="flex flex-col justify-center">
                             <a
                                 href={links.link}
                                 target="_blank"
@@ -176,6 +184,19 @@ function ProjectSection({
                             >
                                 <Button variant="link" className="hover:cursor-pointer text-[#74A662] text-lg sm:text-2xl inline-flex items-center gap-1">{title}<ExternalLinkIcon/></Button>
                             </a>
+                            <div className="flex justify-center">
+                                {demoLink && (
+                                    <a
+                                        href={demoLink.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Button variant="link" className="hover:cursor-pointer text-muted-foreground text-lg sm:text-md items-center">
+                                            View Demo <ExternalLinkIcon />
+                                        </Button>
+                                    </a>
+                                )}
+                            </div>
                         </CardTitle>
                         <CardDescription>{dateRange}</CardDescription>
                     </CardHeader>
