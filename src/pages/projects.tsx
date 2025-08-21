@@ -29,9 +29,6 @@ export default function LeadershipPage() {
             <div className="flex flex-col w-full max-w-7xl justify-center mx-auto gap-5">
                 <ProjectSection
                     heading="Loop"
-                    subHeading={`
-                    By Joy Zhu, Grace Chen, Areesh Patni, Siqi Lai, Parmida Raeis-Hosseini, Azzarina Azizi
-                    `}
                     images={[
                         loop1,
                         loop2,
@@ -82,7 +79,7 @@ export default function LeadershipPage() {
                     dateRange="February 2025"
                     description={`
                     This was a small fun project I made while trying out React, TypeScript, and Vite for the first time. I built it because I could never get my
-                    boiled eggs just right. Too runny, too firm, too chaotic!.
+                    boiled eggs just right. Too runny, too firm, too chaotic!
 
                      So I built Egg Timer: It’s a simple web application that counts down while your egg is cooking, and when time’s up, you’re alerted by the lovely,
                      triumphant sound of a chicken...
